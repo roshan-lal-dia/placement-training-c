@@ -14,7 +14,7 @@ int area(int diameter) {
 int main () {
     int diameter = 0;
     printf("Please enter the diameter: ");
-    scanf("%f", &diameter);
+    scanf("%d", &diameter);
 
     float final =  area(diameter);
     printf("Area: %.2f", final );
