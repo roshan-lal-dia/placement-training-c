@@ -4,7 +4,7 @@ float pi = 3.14;
 
 
 int area(int diameter) {
-         float radius = diameter /2.0 ;
+         float radius = (float)diameter /2 ;
          float areaOfCircle = 0;
         areaOfCircle =  pi * (radius * radius);
 
@@ -12,7 +12,7 @@ int area(int diameter) {
 }
 
 int main () {
-    float diameter = 0;
+    int diameter = 0;
     printf("Please enter the diameter: ");
     scanf("%f", &diameter);
 
