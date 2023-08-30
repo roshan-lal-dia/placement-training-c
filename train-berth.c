@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int berth = 566;
+    int berth = 566; //max berth = 72
     int mod = berth % 8;
 
 if ( berth <= 72  && berth >0) {
