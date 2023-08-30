@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main (){
-    int InitDays, InitSMS, InitData;
+    int InitDays=28, InitCalls = 100, InitSMS=100, InitData=1000;
     int packChoice, day, calls, sms, data;
-    int RemDays, RemSMS, RemData;
+    int RemDays, RemCalls, RemSMS, RemData;
 
     printf("Enter your mobile pack:");
     printf("\n1)199 \n2)299 \n3)799");
@@ -26,23 +26,29 @@ int main (){
     {
     case 1:
         printf("You have selected: %d", packChoice);
-        if(InitDays > 28){
-            printf("Your pack has expired");
+        if(day > 28){
+            printf("\nYour pack has expired");
         }else {
             RemDays = InitDays - day;
-            printf("Remaining days is: %d", RemDays);
+            printf("\nRemaining days is: %d", RemDays);
         }
-        if(InitSMS > 100){
-            printf("No more available SMS");
+        if(calls > 100){
+            printf("\nNo more available SMS");
         }else {
             RemSMS = InitSMS - sms;
-            printf("Remaining days is: %d", RemSMS);
+            printf("\nRemaining calls is: %d", RemSMS);
+        }         
+        if(sms > 100){
+            printf("\nNo more available SMS");
+        }else {
+            RemSMS = InitSMS - sms;
+            printf("\nRemaining sms is: %d", RemSMS);
         } 
-        if(InitData > 1000){
-            printf("No more available data");
+        if(data > 1000){
+            printf("\nNo more available data");
         }else {
             RemData = InitData - data;
-            printf("Remaining days is: %d", RemData);
+            printf("\nRemaining data is: %d", RemData);
         } 
         break;
     case 2:
