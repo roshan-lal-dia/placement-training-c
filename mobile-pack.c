@@ -26,13 +26,10 @@ int main (){
     {
     case 1:
         printf("You have selected: %d", packChoice);
-        if(day > 28){
-            printf("\nYour pack has expired");
-        }else  {
+        if(day <= 28){
             RemDays = InitDays - day;
             printf("\nRemaining days is: %d", RemDays);
-        }
-        if(calls > 100){
+            if(calls > 100){
             printf("\nNo more available SMS");
         }else {
             RemSMS = InitSMS - sms;
@@ -50,6 +47,9 @@ int main (){
             RemData = InitData - data;
             printf("\nRemaining data is: %d", RemData);
         } 
+        } else {
+            printf("\nYour pack has expired");
+        }
         break;
     case 2:
         printf("You have selected: %d", packChoice);
