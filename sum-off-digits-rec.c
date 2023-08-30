@@ -13,20 +13,6 @@ int main() {
         num /= 10;
     }
 
-    printf("sum:\n");
-    
-    // Continue summing until we get a single-digit result
-    while (sum >= 10) {
-        printf("%d\n", sum); // Print intermediate sum
-        int temp = sum;
-        sum = 0;
-
-        while (temp > 0) {
-            digit = temp % 10;
-            sum += digit;
-            temp /= 10;
-        }
-    }
 
     printf("sum: %d\n", sum);
 
