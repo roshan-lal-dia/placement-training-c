@@ -3,6 +3,8 @@
 int main() {
     char grade;
     int marks = 0;
+    //can be improved using nested if and goto
+    //goto example - tinyurl.com/goto-state
 
     printf("Enter your marks:");
     scanf("%d", &marks);
