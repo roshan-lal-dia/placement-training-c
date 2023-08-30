@@ -7,9 +7,9 @@ int main () {
     printf("\n1)199 \n2)299 \n3)799");
     printf("\nSelect a pack:");
     scanf("%d", &packChoice);
-    //printf("%d", packChoice);
+    printf("%d", packChoice);
 
-    printf("You have selcted the pack: %d \nPlease enter further details:", packChoice,);
+    printf("You have selcted the pack: %d \nPlease enter further details:", packChoice);
 
    printf("What is the day:");
    scanf("%d", &day);
@@ -23,7 +23,13 @@ int main () {
     switch (packChoice)
     {
     case 1:
-        
+        printf("You have selected: %d", packChoice);
+        break;
+    case 2:
+        printf("You have selected: %d", packChoice);
+        break;
+    case 3:
+        printf("You have selected: %d", packChoice);
         break;
     
     default:
