@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int berth = 67;
+    int berth = 566;
     int mod = berth % 8;
 
+if ( berth <= 72  && berth >0) {
     switch (mod)
     {
     case 1 :
@@ -31,5 +32,8 @@ int main() {
         printf("Seat pos is: UW");
         break;              
     }
+} else {
+    printf("Berth not available");
+}
     
 }
