@@ -12,7 +12,13 @@ int main () {
     printf("You have selcted the pack: %d \nPlease enter further details:", packChoice,);
 
    printf("What is the day:");
-   scanf
+   scanf("%d", &day);
+   printf("No. of calls used:");
+   scanf("%d", &calls);
+   printf("No. of SMS used:");
+   scanf("%d", &sms);
+   printf("No. of data used:");
+   scanf("%d", &data);
 
     switch (packChoice)
     {
