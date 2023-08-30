@@ -28,7 +28,7 @@ int main (){
         printf("You have selected: %d", packChoice);
         if(day > 28){
             printf("\nYour pack has expired");
-        }else {
+        }else  {
             RemDays = InitDays - day;
             printf("\nRemaining days is: %d", RemDays);
         }
