@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int berth = 57;
+    int berth = 67;
     int mod = berth % 8;
 
     switch (mod)
