@@ -3,7 +3,6 @@
 int main() {
     int berth = 57;
     int mod = berth % 8;
-   // printf("mod is: %d", mod);
 
     switch (mod)
     {
