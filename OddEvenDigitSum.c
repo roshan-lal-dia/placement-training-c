@@ -19,7 +19,7 @@ int main () {
     }
     }
     
-    int diff = -oddSum - evenSum;
+    int diff = oddSum - evenSum;
 
     //diff *= (-1); @not working
 
