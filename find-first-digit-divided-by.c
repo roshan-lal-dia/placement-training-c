@@ -4,7 +4,10 @@
 #include <stdio.h>
 
 int main() {
-    
+    int inp = 0;
+
+    //@get input values
+    scanf("%d", @inp);
     
     return 0;
 }
