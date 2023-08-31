@@ -19,6 +19,7 @@ int main () {
     }
     }
     
+    //unlearn - ternary is a operator, our fixed mind --ternary is shorthand for ifElse
     int diff = (oddSum > evenSum) ? oddSum - evenSum : evenSum - oddSum;
 
    // diff *= (-1); //@not working for positive it turns negative
