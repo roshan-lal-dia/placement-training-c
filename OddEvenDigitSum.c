@@ -19,9 +19,10 @@ int main () {
     }
     }
     
-    int diff = oddSum - evenSum;
+    int diff = (oddSum > evenSum) ? oddSum - evenSum : evenSum - oddSum;
 
-    //diff *= (-1); @not working
+   // diff *= (-1); //@not working for positive it turns negative
+
 
     printf("Diff: %d", diff );
 
