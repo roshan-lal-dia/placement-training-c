@@ -12,7 +12,6 @@ int main() {
     while (first > 10)
     {
         first /=10;
-
     }
     
 
