@@ -6,12 +6,15 @@
 
     int number = 0;
     scanf("%d", &number);
-    printf("Num: %d", number);
 
     //find factors
-    for (i = 0; i < ; i++)
+    for (int i = 1; i <= number; i++)
     {
-        /* code */
+        if(number %i==0)
+        {
+            printf("Factors : %d\n", i);
+        }
+        
     }
     
 
