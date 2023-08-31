@@ -4,5 +4,16 @@
 
  int main () {
 
-    return 0;
+    int number = 0;
+    scanf("%d", &number);
+    printf("Num: %d", number);
+
+    //find factors
+    for (i = 0; i < ; i++)
+    {
+        /* code */
+    }
+    
+
+    return 0; 
  }
