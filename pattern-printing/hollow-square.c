@@ -22,6 +22,8 @@ int main () {
             }else if (j == 1 || j == input)
             {
                 printf("* ");
+            }else{
+                printf("  ");
             }
             
             
