@@ -12,17 +12,24 @@ int main () {
     {
         scanf("%d", &Number[i]);   
     }
+
+    //without using conditional statements
+    //non optimal
     
     for (int i = 0; i < ArraySize; i++)
     {
-        if(i % 2 ==0 )
+        for (int j = i; j %2 ==0 ; j++)
         {
-            //printf("\n%d --Even", Number[i]);
             EvenSum += i;
-        }else{
-            //printf("\n%d --Odd", Number[i]);
+            //i--;
+        }
+        for (int k = i;k %2 !=0 ; k++)
+        {
             OddSum += i;
-        }     
+           // i--;
+        }
+        
+
     }
 
     printf("Difference: %d", abs(EvenSum - OddSum));
