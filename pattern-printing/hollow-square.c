@@ -23,7 +23,7 @@ int main () {
             {
                 printf("* ");
             }else{
-                printf("  ");
+                printf("  "); //2 pixels
             }
             
             
