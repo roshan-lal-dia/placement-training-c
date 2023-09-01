@@ -8,8 +8,11 @@ int main() {
     // reversed integer is stored in reversed variable
     while (n != 0) {
         remainder = n % 10;
+        printf("%d", remainder);
         reversed = reversed * 10 + remainder;
+        printf("%d", reversed);
         n /= 10;
+        printf("%d", n);
     }
 
     // palindrome if orignal and reversed are equal
