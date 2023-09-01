@@ -7,6 +7,7 @@ int main () {
     scanf("%d", &ArraySize);
     int Number[ArraySize];
 
+
     for (int i = 0; i < ArraySize; i++)
     {
         scanf("%d", &Number[i]);   
@@ -14,17 +15,17 @@ int main () {
     
     for (int i = 0; i < ArraySize; i++)
     {
-        if(Number[i] % 2 ==0 )
+        if(i % 2 ==0 )
         {
             //printf("\n%d --Even", Number[i]);
-            EvenSum += Number[i];
+            EvenSum += i;
         }else{
             //printf("\n%d --Odd", Number[i]);
-            OddSum += Number[i];
+            OddSum += i;
         }     
     }
 
-    printf("Difference: %d", abs(EvenSum - OddSum));
+printf("Difference: %d", abs(EvenSum - OddSum));
 
     return 0;
 }
