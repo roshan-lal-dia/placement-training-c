@@ -15,7 +15,16 @@ int main () {
     {
         for (int j = 1; j <= input; j++)
         {
-            printf("* ");
+            
+            if (i == 1 || i == input)
+            {
+                printf("* ");
+            }else if (j == 1 || j == input)
+            {
+                printf("* ");
+            }
+            
+            
         }printf("\n");
         
     }
