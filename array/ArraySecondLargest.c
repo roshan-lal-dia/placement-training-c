@@ -21,5 +21,5 @@ int main()
         }
     }
 
-        printf("%d ",ar[ a -2 ]);
+      printf("%d ",ar[ a -2 ]);
 }
