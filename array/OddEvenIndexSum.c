@@ -23,7 +23,7 @@ int main () {
             EvenSum += i;
             //i--;
         }
-        for (int k = i;k %2 !=0 ; k++)
+        for (int k = i;k %2 !=0 ; k++)//aslo can change to k+2
         //loops can be deducted using
         //arithmetic logic like starteing i = 0;
         //nested loop itself is not needed
