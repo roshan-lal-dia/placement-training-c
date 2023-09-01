@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main () {
 
-    int ArraySize = 0;
+    int ArraySize = 0, EvenSum = 0, OddSum =0;
     scanf("%d", &ArraySize);
     int Number[ArraySize];
 
@@ -15,11 +16,15 @@ int main () {
     {
         if(Number[i] % 2 ==0 )
         {
-            printf("\n%d --Even", Number[i]);
+            //printf("\n%d --Even", Number[i]);
+            EvenSum += Number[i];
         }else{
-            printf("\n%d --Odd", Number[i]);
+            //printf("\n%d --Odd", Number[i]);
+            OddSum += Number[i];
         }     
     }
+
+    printf("Difference: %d", abs(EvenSum - OddSum));
 
     return 0;
 }
