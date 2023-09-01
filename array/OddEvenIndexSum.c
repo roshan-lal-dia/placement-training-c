@@ -25,7 +25,7 @@ int main () {
         }     
     }
 
-printf("Difference: %d", abs(EvenSum - OddSum));
+    printf("Difference: %d", abs(EvenSum - OddSum));
 
     return 0;
 }
