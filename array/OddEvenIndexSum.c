@@ -15,7 +15,7 @@ int main () {
 
     //without using conditional statements
     //non optimal
-    
+    //optimal is to reduce loops
     for (int i = 0; i < ArraySize; i++)
     {
         for (int j = i; j %2 ==0 ; j++)
@@ -24,11 +24,14 @@ int main () {
             //i--;
         }
         for (int k = i;k %2 !=0 ; k++)
+        //loops can be deducted using
+        //arithmetic logic like starteing i = 0;
+        //nested loop itself is not needed
+        //without changing the condition, just change the initialization
         {
             OddSum += i;
            // i--;
         }
-        
 
     }
 
