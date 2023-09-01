@@ -12,7 +12,7 @@ int main()
     {
         for(int j=i+1;j<a;j++)
         {
-            if(ar[i]>ar[j])
+            if(ar[i]>ar[j]) //change to < to store in descending order
             {
                 int temp=ar[i];
                 ar[i]=ar[j];
@@ -21,5 +21,5 @@ int main()
         }
     }
 
-      printf("%d ",ar[ a -2 ]);
+      printf("%d ",ar[ a -2 ]); //if < then, ar[1]
 }
